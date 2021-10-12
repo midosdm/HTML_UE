@@ -1,0 +1,15 @@
+html, button, input, select, textarea {
+    color: #444;
+    }
+    html {  font-size: 1em;
+            line-height: 1.4;
+            background-color: #777; }
+
+            div#wrapper {
+                min-width: 320px;
+                max-width: 900px;
+            }
+            
+            header img{
+                justify-content: start;
+            }
