@@ -2,14 +2,16 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title>Mon CV</title>
-<meta name="description" content="A propos de moi">
+<meta name="description" content="A propos de moi"/>
 <meta name="keywords" content="web,developer,resume" />
-<meta name="author" content="Mon nom">
+<meta name="author" content="Mohamed Saidem"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/resume.css" />
+<link rel="stylesheet" href="css/responsive.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/fontawesome/4.4.0/css/fontawesome.min.css" />
+<link rel="stylesheet" href="https://use.typekit.net/ckx1wug.css">
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 </head> 
@@ -18,20 +20,20 @@
 <div id="wrapper">
     <div class="header-container">
         <header>
-            
+            <div itemscope itemtype="https://schema.org/Person">
             <div class="header-item" style="order:3;">
-                    <h4 > Brest - France
-                    <h4 >03/04/1999</h4>
-                    <h4 >mohamedsaidem-1@gmail.com</h4>
-                    </h4>
+                    <h4 itemprop="addressLocality"> Brest, France</h4>
+                    <h4 itemprop="birthDate">03/04/1999</h4>
+                    <h4 itemprop="email">mohamedsaidem-1@gmail.com</h4>
+                    
             </div>
             <div class="header-item" style="order:2;">
-                <h1 >Saidem Mohamed</h1>
+                <h1 id="name" itemprop="name">Saidem Mohamed</h1>
             </div>
             <div class="header-item" style="order:1;">
-                <img id="myImage"  src="images/MohamedSaidem.jpg"/>
+                <img id="myImage"  itemprop="image" src="images/MohamedSaidem.jpg"/>
             </div>
-            
+        </div>
         </header>
     </div>
     

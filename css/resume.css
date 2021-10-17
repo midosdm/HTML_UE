@@ -1,3 +1,4 @@
+/* @import url("https://use.typekit.net/ckx1wug.css"); */
 html, button, input, select, textarea {
     color: #444;
     }
@@ -40,4 +41,12 @@ html {  font-size: 1em;
     margin-left: 20px;
 }
 
+#name{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
 
+@media only screen and (max-width: 740px) {
+    #wrapper{ background:rgb(185, 44, 44);}
+}
