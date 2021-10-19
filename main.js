@@ -1,20 +1,6 @@
 function showDetails(id) {
 
-    document.querySelectorAll(".accordion").forEach(function (div) {
-        if(div.style.display == "none" && div.id == id){
-            // div.classList.add("is-visible");
-            div.style.display = "inline";
-            // setTimeout(function () {
-            //     fadeInOut(div);
-            // }, 500);
-        } else {
-            // div.classList.remove("is-visible");
-            //(this).fadeOut();
-             div.style.display="none";
-             
-        }
-    });
-
+    //---------------- PREVIOUS CODE ------------
     // var dots= document.getElementById("dots")
     // var moreText = document.getElementById("details");
     // var moreText2 = document.getElementById("details-2");
@@ -31,13 +17,42 @@ function showDetails(id) {
     //     moreText.style.display = "inline";
     // }
 
+    //------------- NEW IMPROVED CODE ------------
+
+    document.querySelectorAll(".accordion").forEach(function (div) {
+        if(/*div.style.display == "none" &&*/ div.id == id){
+
+            // ------------ Previous solutin - Not 100% functional -----------
+            // $(div).fadeIn("slow", function() {
+            //     div.style.display = "inline";
+            // })
+            // setTimeout(function () {
+            //     fadeInOut(div);
+            // }, 500);
+
+            //------------- New functional solution using jquery -------------
+            setTimeout(function () {
+                fadeInOut(div);
+                div.classList.add("is-visible");
+                
+            },500)
+            
+            
+        } else {
+             div.classList.remove("is-visible");
+            $(this).fadeOut();
+             div.style.display="none";
+             
+        }
+    });
+
     console.log(id);
 
 }
 
 
-// function fadeInOut(element) {
-//     $(element).fadeIn("slow", function() {
+ function fadeInOut(element) {
+     $(element).fadeIn("slow", function() {
 
-//     })
-// }
+     })
+ }

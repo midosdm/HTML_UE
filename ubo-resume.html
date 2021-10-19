@@ -12,7 +12,8 @@
 <link rel="stylesheet" href="css/responsive.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/fontawesome/4.4.0/css/fontawesome.min.css" />
 <link rel="stylesheet" href="https://use.typekit.net/ckx1wug.css">
-<script type="text/javascript" src="main.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script type="text/javascript" src="main.js"></script>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 </head> 
@@ -36,6 +37,10 @@
             </div>
         </div>
         </header>
+    </div>
+
+    <div class="separation-line">
+
     </div>
     
 
@@ -62,30 +67,53 @@
         <section class="competence">
             <h3>Competences</h3>
             <dl>
-                <dt>SGBD
-                    <dd>
-                        MySql, SQLite, Acess,
-                        Oracle(administration)
-                    </dd>
-                </dt>
-                <dt>Analyse et conception:
-                    <dd>
-                        UML, MERISE
-                    </dd>
-                </dt>
-                <dt>Langages de programmation:
-                    <dd>
-                        Java(J2SE-JEE), C, C++, PHP, SQL,
-                        PL/SQL, JavaScript, Apex(SalesForce),
-                        SOQL
-                    </dd>
-                </dt>
-                <dt>Développement Web
-                    <dd>
-                        HTML, HTML5,CSS3, PHP,
-                        JavaScript, Java Entreprise Edition
-                    </dd>
-                </dt>
+                <div class="tooltip">
+                    <dt >SGBD
+                        <dd >
+                            <span class = "tooltiptext">
+                                MySql, SQLite, Acess,
+                                Oracle(administration)
+                            </span>
+                            
+                        </dd>
+                    </dt>
+                </div>
+                
+                <div class="tooltip">
+                    <dt >Analyse et conception:
+                        <dd class="tooltiptext">
+                            <span>
+                                UML, MERISE
+                            </span>
+                            
+                        </dd>
+                    </dt>
+                </div>
+                
+                <div class="tooltip">
+                    <dt>Langages de programmation:
+                        <dd>
+                            <span class="tooltiptext">
+                                Java(J2SE-JEE), C, C++, PHP, SQL,
+                                PL/SQL, JavaScript, Apex(SalesForce),
+                                SOQL
+                            </span>
+                            
+                        </dd>
+                    </dt>
+                </div>
+                
+                <div class ="tooltip">
+                    <dt>Développement Web
+                        <dd>
+                            <span class="tooltiptext">
+                                HTML, HTML5,CSS3, PHP,
+                                JavaScript, Java Entreprise Edition
+                            </span>
+                            
+                        </dd>
+                    </dt>
+                </div>
 
             </dl>
         </section>
@@ -106,7 +134,7 @@
                     <p>
                         Mater 2 DOSI
                         <div class="details" id="d1" onclick="showDetails(this.id)">
-                            <button class="read-more-btn">+</button>
+                            <button class="read-more-btn">Details</button>
                         </div>
                         <div id="d1" class="accordion">
                             <p>Plus des details seront afficher ici.</p>
@@ -120,7 +148,7 @@
                     <p>
                         Cycle ingenieur en genie info
                         <div class="details" id="d2" onclick="showDetails(this.id)">
-                            <button class="read-more-btn">+</button>
+                            <button class="read-more-btn">Details</button>
                         </div>
                         <div id="d2" class="accordion">
                             <p>Plus des details seront afficher ici.</p>
@@ -133,10 +161,12 @@
                     <p>
                         Cycle Préparatoire
                         <div class="details" id="d3" onclick="showDetails(this.id)">
-                            <button class="read-more-btn">+</button>
+                            <button class="read-more-btn">Details</button>
                         </div>
                         <div id="d3" class="accordion">
-                            <p>Plus des details seront afficher ici.</p>
+                            <p>Plus des details seront afficher ici.
+                                Plus des details seront afficher ici.
+                            </p>
                         </div>                    
                     </p>
                 </li>
@@ -147,7 +177,7 @@
                     <p>
                         Baccalauréat Série D
                         <div class="details" id="d4" onclick="showDetails(this.id)">
-                            <button class="read-more-btn">+</button>
+                            <button class="read-more-btn">Details</button>
                         </div>
                         <div id="d4" class="accordion">
                             <p>Plus des details seront afficher ici.</p>

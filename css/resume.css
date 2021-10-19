@@ -45,20 +45,85 @@ h1, h3, h4{
     font-family: acumin-pro, sans-serif;
     font-weight: 600;
     font-style: italic;
+    
 }
 
-/* #details{
-    display:none;
+h3 {
+    color: rgb(42, 108, 128);
 }
 
-#details-2{
-    display:none;
+#name {
+    color: rgb(42, 108, 128);
 }
 
-div.details.show {
-    display: block !important;
-} */
+.read-more-btn{
+    padding: 7px;
+    background-color: rgb(83, 131, 146);
+    color: white;
+    border:transparent;
+}
+.read-more-btn:hover{
+    background-color: rgb(108, 174, 194);
+    transition: all 0.5s ease-in-out;
+}
 
+.read-more-btn:focus{
+    background-color: rgb(108, 174, 194);
+}
+
+.separation-line{
+    background-color: rgb(83, 131, 146);
+    padding:1px;
+}
 .accordion{
     display: none;
+    padding: auto;
+    background-color: rgb(83, 131, 146);
+    color:white;
 }
+
+.tooltip {
+    position: relative;
+    display: block;
+    padding: 4px;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
