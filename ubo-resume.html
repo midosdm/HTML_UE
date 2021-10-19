@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/responsive.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/fontawesome/4.4.0/css/fontawesome.min.css" />
 <link rel="stylesheet" href="https://use.typekit.net/ckx1wug.css">
+<script type="text/javascript" src="main.js"></script>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 </head> 
@@ -94,23 +95,65 @@
         <div class="cv-body">
         <section class="formation">
             <i class="fa-solid fa-camera"></i>
-            <h3>Formations</h3>
-            
-            <ul>
-                <h4>UBO</h4>
-                <h4>2021 - 2022</h4>
-                <li>Mater 2 DOSI</li>
+            <div class="formations">
+                <h3>Formations</h3>
+            </div>
 
+            <ul>
+                <h4 class="school-name">UBO</h4>
+                <h4 class="year">2021 - 2022</h4>
+                <li>
+                    <p>
+                        Mater 2 DOSI
+                        <div class="details" id="d1" onclick="showDetails(this.id)">
+                            <button class="read-more-btn">+</button>
+                        </div>
+                        <div id="d1" class="accordion">
+                            <p>Plus des details seront afficher ici.</p>
+                        </div>
+                    </p>
+                </li>
+                
                 <h4>École Nationale Des Sciences Appliquées d'AGADIR</h4>
                 <h4>2019 - 2021</h4>
-                <li>Cycle Ingénieur en Génie Informatique</li>
+                <li>
+                    <p>
+                        Cycle ingenieur en genie info
+                        <div class="details" id="d2" onclick="showDetails(this.id)">
+                            <button class="read-more-btn">+</button>
+                        </div>
+                        <div id="d2" class="accordion">
+                            <p>Plus des details seront afficher ici.</p>
+                        </div>                
+                    </p>
+                </li>
 
                 <h4>2017 - 2019</h4>
-                <li>Cycle Préparatoire</li>
+                <li>
+                    <p>
+                        Cycle Préparatoire
+                        <div class="details" id="d3" onclick="showDetails(this.id)">
+                            <button class="read-more-btn">+</button>
+                        </div>
+                        <div id="d3" class="accordion">
+                            <p>Plus des details seront afficher ici.</p>
+                        </div>                    
+                    </p>
+                </li>
+
                 <h4>LYCEE JAWHARATT AL MAARIF</h3>
                 <h4>2016 - 2017</h4>
-                <li>Baccalauréat Série D</li>
-
+                <li>
+                    <p>
+                        Baccalauréat Série D
+                        <div class="details" id="d4" onclick="showDetails(this.id)">
+                            <button class="read-more-btn">+</button>
+                        </div>
+                        <div id="d4" class="accordion">
+                            <p>Plus des details seront afficher ici.</p>
+                        </div>                    
+                    </p>
+                </li>
             </ul>
         </section>
         </div>

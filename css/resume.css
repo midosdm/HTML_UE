@@ -46,3 +46,19 @@ h1, h3, h4{
     font-weight: 600;
     font-style: italic;
 }
+
+/* #details{
+    display:none;
+}
+
+#details-2{
+    display:none;
+}
+
+div.details.show {
+    display: block !important;
+} */
+
+.accordion{
+    display: none;
+}
