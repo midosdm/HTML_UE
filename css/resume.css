@@ -58,6 +58,7 @@ h3 {
 
 .read-more-btn{
     padding: 7px;
+    margin-left: 8px;
     background-color: rgb(83, 131, 146);
     color: white;
     border:transparent;
@@ -75,6 +76,13 @@ h3 {
     background-color: rgb(83, 131, 146);
     padding:1px;
 }
+
+
+/* .details-container{
+    display: flex;
+    align-items: center;
+} */
+
 .accordion{
     display: none;
     padding: auto;
